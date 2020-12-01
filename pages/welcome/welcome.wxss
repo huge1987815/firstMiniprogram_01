@@ -1,0 +1,40 @@
+/* pages/welcome/welcome.wxss */
+.container{ /* view样式 */
+  display: flex; /* 弹性布局 */
+  flex-direction: column;/* 垂直方向 */
+  align-items: center;/* 水平居中对齐 */
+  background-color: #b3d4db;/*背景颜色*/
+}
+.user-avatar{ /* 图片样式 */
+  width: 200rpx; /* 宽度 */
+  height: 200rpx; /* 高度 */
+  margin-top: 160rpx; /* 上边距 */
+  border-radius: 50%; /* 圆角边框 */
+  overflow: hidden; /* 内容会被修剪，并且其余内容是不可见的 */
+}
+
+.motto{  /* Hello,冬季之旅样式 */
+  color: #666666;  /*字体颜色*/
+  font-size: 32rpx;  /*字体大小*/
+  margin-top: 100rpx;  /*上边距*/
+}
+
+.journey-container{ /*按钮样式*/
+  border: 1px solid #405f80; /*边框设置*/
+  width: 200rpx;/*宽度*/
+  height: 80rpx;/*高度*/
+  border-radius: 10rpx;/*设置圆角*/
+  text-align: center;/*字体水平居中*/
+  margin-top: 200rpx;/*按钮与文本之间的间距*/
+}
+
+.journey{/*按钮里面内容样式设置*/
+  font-size: 22rpx;/*字体大小*/
+  color: #405f80;  /*字体颜色*/
+  line-height: 80rpx;/*行高*/
+  font-weight: bold;/*加粗*/
+}
+
+page{
+  background-color: #b3d4db;/*修改小程序给页面提供的默认标签page加背景颜色*/
+}

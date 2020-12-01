@@ -1,0 +1,23 @@
+<!--components/post/index.wxml-->
+<!-- 一篇文章容器 -->
+<view  bind:tap="onTap" class="posts-container"><!--垂直布局-->
+      <view class="posts-author-date"><!--文章的第一行小图像及文本-->
+        <image catch:tap="onMaxImage" class="posts-author" src="{{res.avator}}"></image>
+        <text class="posts-date">{{res.date}}</text>
+      </view>
+      <!--文章的第二行标题-->
+      <text class="posts-title">{{res.title}}</text>
+      <!-- 文章的第三行图片 -->
+      <image class="posts-image" src="{{res.imgSrc}}"></image>
+      <!-- 文章的第四行文本 -->
+      <text class="posts-content">{{res.content}}</text>
+      <!-- 文章的第五行 -->
+      <view class="posts-like">
+        <!-- <image class="posts-like-image" src="/images/icon/wj.png"></image> -->
+        <l-icon catch:tap="onShouCang" class="posts-like-image" size="28" color="#666" name="favor"/>
+        <text class="posts-like-font">{{res.collection}}</text>
+        <!-- <image class="posts-like-image" src="/images/icon/yan.png"></image> -->
+        <l-icon catch:tap="onReady" class="posts-like-image" size="32" color="#666" name="eye"/>
+        <text class="posts-like-font">{{res.reading}}</text>
+      </view>    
+    </view>

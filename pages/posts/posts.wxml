@@ -1,0 +1,20 @@
+<!--pages/posts/posts.wxml-->
+<view>
+  <!-- 写一个滑块视图容器，里面放三个Swiper=item组件 -->
+  <swiper indicator-dots="{{true}}" autoplay="{{true}}" 
+  vertical="{{false}}" circular="{{true}}" interval="1000">
+    <swiper-item>
+      <image data-post-id="0" bind:tap="onGoToDetailImage" src="/images/posts/lpost2.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-post-id="1" bind:tap="onGoToDetailImage" src="/images/posts/lpost1.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-post-id="2" bind:tap="onGoToDetailImage" src="/images/posts/lpost3.png"></image>
+    </swiper-item>
+  </swiper>
+
+  <block  wx:for="{{postList}}" wx:for-item="item" wx:key="index">
+    <post bind:posttap="onGoToDetail" res="{{item}}"></post>
+  </block>
+</view>

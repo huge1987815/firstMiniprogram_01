@@ -1,0 +1,11 @@
+/* pages/posts/posts.wxss */
+swiper{/*滑块视图样式*/
+  width:100%;/*宽度*/
+  height: 460rpx;/*高度*/
+}
+
+swiper image{/*图片样式设置*/
+  width:100%;/*宽度*/
+  height: 460rpx;/*高度*/
+}
+

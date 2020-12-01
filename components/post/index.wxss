@@ -1,0 +1,75 @@
+/* components/post/index.wxss */
+.posts-container{/*文章整体样式布局*/
+  display: flex;/*设置为flex容器*/
+  flex-direction: column;/*垂直布局*/
+  margin-top: 20rpx;/*上边距离*/
+  margin-bottom: 40rpx;/*下边距离*/
+  background-color: #fff;/*背景颜色*/
+  border-top: 1px solid #ededed;/*上边线*/
+  border-bottom: 1px solid #ededed;/*下边线*/
+  padding-bottom: 10rpx;/*下内补白*/
+}
+
+.posts-author-date{/*文章第一行样式*/
+  /* margin-top: 10rpx;
+  margin-bottom: 20rpx;
+  margin-left: 10rpx; */
+  margin: 10rpx 0 20rpx 10rpx;/*外边距上右下左*/
+  display: flex;/*设置为flex容器*/
+  flex-direction: row;/*平行布局*/
+  align-items: center;/*居中*/
+}
+
+.posts-author{/*文章作者样式*/
+  width:60rpx;
+  height:60rpx;
+  border-radius: 50%;/*圆角*/
+  /* vertical-align: middle;   */
+}
+
+.posts-date{/*发布日期*/
+  margin-left: 20rpx;/*左边距*/
+  /* vertical-align: middle; */
+}
+
+.posts-title{/*标题样式*/
+  font-size: 34rpx;
+  font-weight: 600;
+  margin-bottom: 20rpx;
+  margin-left: 20rpx;
+  color:#333;
+}
+
+.posts-image{/*文章图片样式*/
+  width: 100%;
+  height: 340rpx;
+  margin-bottom: 30rpx;
+}
+
+.posts-content{/*文章内容*/
+  font-size: 28rpx;
+  color:#666;
+  margin-bottom: 20rpx;
+  margin-left: 20rpx;
+  line-height: 40rpx;/*行高*/
+  letter-spacing: 2rpx;/*文字间距*/
+}
+
+.posts-like{/*容器样式*/
+  display: flex;/*设置为flex容器*/
+  flex-direction: row;/*平行布局*/
+  align-items: center;/*居中*/
+  margin-left: 20rpx;/*左边距*/
+}
+
+.posts-like-image{/*图片样式*/
+  /* height: 32rpx;
+  width:32rpx; */
+  margin-right: 16rpx;
+  vertical-align: middle;
+}
+
+.posts-like-font{/*文字设置*/
+  margin-right: 40rpx;
+  font-size: 26rpx;
+}

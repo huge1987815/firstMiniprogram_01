@@ -6,7 +6,7 @@
   "setting": {
     "urlCheck": false,
     "es6": true,
-    "enhance": false,
+    "enhance": true,
     "postcss": true,
     "preloadBackgroundData": false,
     "minified": true,
@@ -48,23 +48,54 @@
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {
-    "search": {
-      "list": []
-    },
-    "conversation": {
+    "plugin": {
       "list": []
     },
     "game": {
-      "list": []
-    },
-    "plugin": {
       "list": []
     },
     "gamePlugin": {
       "list": []
     },
     "miniprogram": {
-      "list": []
+      "list": [
+        {
+          "name": "pages/posts/posts",
+          "pathName": "pages/posts/posts",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/welcome/welcome",
+          "pathName": "pages/welcome/welcome",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/posts-detail/postsDetail",
+          "pathName": "pages/posts-detail/postsDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/movies/movies",
+          "pathName": "pages/movies/movies",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/more-movie/more-movie",
+          "pathName": "pages/more-movie/more-movie",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/movie-detail/movie-detail",
+          "pathName": "pages/movie-detail/movie-detail",
+          "query": "mid=313",
+          "scene": null
+        }
+      ]
     }
   }
 }

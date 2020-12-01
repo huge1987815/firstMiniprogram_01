@@ -1,0 +1,26 @@
+<!-- 写一个容器 -->
+<view class="container">
+  <!-- 第一行图片 -->
+  <image class="head-image" src="{{postData.headImgSrc}}"></image>
+  <!-- 音乐图片 -->
+  <image bind:tap="onMusic" class="audio" src="/images/postsdetail/music_start.png"></image>
+  <!-- 第二行作者图像、名称、发表于、时间 -->
+  <view class="author-date">
+    <image class="avatar" src="{{postData.imgSrc}}"></image>
+    <text class="author">{{postData.author}}</text>
+    <text class="const-text">发表于</text>
+    <text class="date">{{postData.date}}</text>
+  </view>
+  <!-- 第三行标题 -->
+  <text class="title">{{postData.title}}</text>
+  <!-- 第四行图片收藏和分享 -->
+  <view class="tool">
+    <view class="circle">
+      <image class="circle-img" src="/images/icon/sc.png"></image>
+      <image class="circle-img" src="/images/icon/share.png"></image>
+    </view>
+    <view class="horizon"></view>
+  </view>
+  <!-- 第五行文章详细内容 -->
+  <text class="detail">{{postData.deatil}}</text>
+</view>

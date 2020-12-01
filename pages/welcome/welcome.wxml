@@ -1,0 +1,15 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="container"><!--是一个容器，类似于div标签,用于布局-->
+  <!-- <image class="user-avatar" src="/images/avatar/welcome.png"></image> -->
+  <!-- 使用自定义组件获取微信图像、昵称和形状,并且把昵称放图片下面,设置微信图像大小 -->
+  <l-avatar placement="bottom" open-data="{{['userAvatarUrl','userNickName']}}" size="180"/>
+  <text class="motto">Hello,冬季之旅</text>
+  <!-- <button>开启小程序之旅</button> -->
+  <view bind:tap="onTap" class="journey-container">
+    <text class="journey">开启小程序之旅</text>
+  </view>
+</view>
+
+<!-- flex容器布局 -->
+<!-- 路由API -->
+
